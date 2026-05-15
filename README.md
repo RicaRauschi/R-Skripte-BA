@@ -43,3 +43,13 @@ The analyses focused on:
 - GIS-based environmental covariates
 - movement-related behaviour of ungulates
 
+---
+
+## Repository Structure
+```text
+├── 01_detection_ratess.R
+├── 02_behaviour_analysis.R
+├── 03_trail_orientation_analysis.R
+├── 04_camera_site_covariates.R
+├── 05_spatial_visualization.R
+└── README.md
