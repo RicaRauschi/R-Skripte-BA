@@ -99,3 +99,44 @@ Visualization and Figure Creation
 <details>
 <summary>Show packages used in R</summary>
 
+### Core packages
+```r
+library(dplyr)
+library(ggplot2)
+library(sf)
+library(terra)
+library(tidyr)
+```
+
+### Spatial analyses
+```r
+library(osmdata)
+library(ggspatial)
+library(scatterpie)
+library(ggforce)
+```
+
+### Camera trap analyses
+```r
+library(camtrapDensity)
+```
+
+</details>
+
+---
+
+## Data Notes
+This repository contains analyes scripts only. Raw field data, camera trap records and GIS base data are not publicly included. Some analyses require local raster and vector datasets that are not part of the repository.
+
+---
+
+## Reproducibility
+The scripts were developed specifically for the analyses conducted in the bachelor thesis. Before execution, file paths and local GIS data sourced may need adjustment.
+
+---
+
+## Author
+Rica Rauschenberg
+Bachelor thesis conducted at University of Potsdam
+Year: 2026
+
