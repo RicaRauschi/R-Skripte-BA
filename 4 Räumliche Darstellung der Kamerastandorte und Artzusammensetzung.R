@@ -22,10 +22,10 @@ library(ggforce)
 
 # ----- 2) Pfade definieren und Daten einlesen -----
 # CamtrapDP-Datensatz
-dp_path <- "C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/Agouti/biosphere-reserve-thuringian-forest-20260128120013/datapackage.json"
+dp_path <- "data/biosphere-reserve-thuringian-forest-20260128120013/datapackage.json"
 
 # Polygon der Kernzone 
-kernzone_path <- "C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/QGIS R/UmrandungNeu.gpkg"
+kernzone_path <- "data/UmrandungNeu.gpkg"
 
 # CamtrapDP einlesen
 pkg <- camtrapDensity::read_camtrapDP(dp_path)
