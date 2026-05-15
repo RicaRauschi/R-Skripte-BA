@@ -14,5 +14,32 @@ The bachelor thesis itself was written in German.
 
 ## Contents
 - [Study Species](#study-species)
-- [Research Focus](#)
+- [Research Focus](#research-focus)
+- [Repository Structure](#repository-structure)
+- [Workflow](#Workflow)
+- [Main Methods](#main-methods)
+- [Software and Packages](#software-and-packaged)
+- [Data Notes](#data-notes)
+- [Reproducibility](#reproducibility)
+- [Author](#author)
+
+---
+
+## Study species
+| Common name | Scientific name |
+|---|---|
+| Red deer | *Cervus elaphus* |
+| Roe deer | *Capreolus capreolus* |
+| Wild boar | *Sus scrofa* |
+
+---
+
+## Research Focus
+The analyses focused on:
+- spatial occurrence of wildlife trails
+- orientation of wildlife trails relative to terrain structure
+- comparison of random vs. targeted camera trap placement
+- detection rated and behavioural patterns
+- GIS-based environmental covariates
+- movement-related behaviour of ungulates
 
