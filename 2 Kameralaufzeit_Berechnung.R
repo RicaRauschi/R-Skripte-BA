@@ -17,7 +17,7 @@ library(readr)
 
 # ----- 2) Laufzeitdaten einlesen -----
 df <- read_excel(
-  "C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/Rica Bachelorarbeit Stick/Kamera_Laufzeit.xlsx",
+  "data/Kamera_Laufzeit.xlsx",
   col_types = "text"
 )
 

@@ -15,8 +15,8 @@ library(readxl)
 library(dplyr)
 
 # ----- 2) Dateipfade definieren -----
-file_animals  <- "C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/Rica Bachelorarbeit Stick/Agouti/Arten_pro_Kamera_lang.xlsx"
-file_runtime <- "C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/R Skripte Anhang/Kamera_Laufzeit.xlsx"
+file_animals  <- "data/Arten_pro_Kamera_lang.xlsx"
+file_runtime <- "data/Kamera_Laufzeit.xlsx"
 
 # ----- 3) Daten einlesen -----
 # -> animals: enthält die Anzahl der Tierauslösungen pro Art und Kamera.

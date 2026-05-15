@@ -126,7 +126,7 @@ cov$dist_stream_m <- as.numeric(st_distance(
 
 # ----- 13) Digitales Geländemodell einlesen -----
 # -> Das DGM dient zur Ableitung von Höhenlage, Hangneigung und Exposition.
-dem <- rast("C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/QGIS R/Neu Koordinatensystem/VerschmolzenDGM1.tif")
+dem <- rast(data/VerschmolzenDGM1.tif")
 
 # ----- 14) Kamerapunkte an Koordinatensystem des DGM anpassen -----
 # -> Nur bei gleichem Koordinatensystem können Rasterwerte korrekt an den Kamera-
