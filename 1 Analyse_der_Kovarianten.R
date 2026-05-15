@@ -28,7 +28,7 @@ library(stringr)
 library(terra)
 
 # ----- 2) Daten einlesen -----
-cov <- read_excel("C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/Rica Bachelorarbeit Stick/Kamera_Laufzeit.xlsx")
+cov <- read_excel("data/Kamera_Laufzeit.xlsx")
 
 # ----- 3) Kamera-IDs bereinigen -----
 # -> Leerzeichen in den Kamera-IDs werden vereinheitlicht
