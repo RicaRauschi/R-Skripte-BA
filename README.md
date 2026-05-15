@@ -19,7 +19,7 @@ Diese Repository enthält die R-Skripte, die für die statistischen Analysen, GI
 - [Verwendete Software und Pakete](#verwendete-software-und-pakete)
 - [Hinweise zu den Daten](#hinweise-zu-den-daten)
 - [Reproduzierbarkeit](#reproduzierbarkeit)
-- [Autorin(#autorin)
+- [Autorin](#autorin)
 
 ---
 
