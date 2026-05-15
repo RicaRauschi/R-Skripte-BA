@@ -23,11 +23,11 @@ library(ggtext)
 # ----- 2) Dateipfade definieren -----
 # Ereignistabelle:
 #   Jede Zeile entspricht einem unabhängigen Kamerafallen-Event
-events_path  <- "C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/Rica Bachelorarbeit Stick/Kriterienkatalog.xlsx"
+events_path  <- "data/Kriterienkatalog.xlsx"
 
 # Laufzeittabelle:
 #   Eine Zeile pro Kamera mit Start- und Enddatum
-runtime_path <- "C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/Rica Bachelorarbeit Stick/Kamera_Laufzeit.xlsx"
+runtime_path <- "data/Kamera_Laufzeit.xlsx"
 
 # ----- 3) Kamera VTK 090 ausschließen -----
 # -> VTK 090 wird ausgeschlossen, da diese Kamera nicht in die finale Auswertung eingeht
@@ -442,7 +442,7 @@ cor(check$rate_events_per_day, check$rate_individuals_per_day, method = "spearma
 # Detektionsdistanz übernommen.
 
 # ----- 25) Datei einlesen -----
-reach_path <- "C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/MaxReichweite.xlsx"
+reach_path <- "data/MaxReichweite.xlsx"
 
 # ----- 26) Ereignisrate erneut berechnen -----
 cam_summary <- events %>%
