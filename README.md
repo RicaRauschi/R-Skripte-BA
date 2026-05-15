@@ -53,3 +53,49 @@ The analyses focused on:
 ├── 04_camera_site_covariates.R
 ├── 05_spatial_visualization.R
 └── README.md
+```
+
+## Workflow
+```text
+Camera Trap Data
+      ↓
+Data Cleaning and Standardisation
+      ↓
+Event Classification
+      ↓
+Statistical Analyses
+      ↓
+GIS-based Spatial Analyses
+      ↓
+Visualization and Figure Creation
+```
+
+---
+
+## Main Methods
+
+### Statistical analyses
+- Monte Carlo permutation tests
+- Spearman correlations
+- Non-parametric statistics
+- Descriptive analyses
+
+### Spatial analyses
+- GIS-based covariate extraction
+- DEM-derived terrain analyses
+- Wildlife trail orientation analyses
+- OpenStreetMap-based distance calculations
+
+### Visualization
+- ggplot2
+- scatterpie
+- sf
+- ggspatial
+
+---
+
+## Software and Packages
+
+<details>
+<summary>Show packages used in R</summary>
+
