@@ -15,7 +15,7 @@ library(ggplot2)
 library(scales)
 
 # ----- 2) Daten einlesen -----
-df <- read_excel("C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/Rica Bachelorarbeit Stick/Kriterienkatalog.xlsx")
+df <- read_excel("data/Kriterienkatalog.xlsx")
 
 # ----- 3) Kamera VTK 090 ausschließen -----
 df <- df %>%
