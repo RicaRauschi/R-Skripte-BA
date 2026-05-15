@@ -18,7 +18,7 @@ library(sf)
 library(dplyr)
 
 # ----- 2) Datei einlesen -----
-df <- readxl::read_excel("C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/QGIS R/R Statistiken/Winkel_fuer_Hangparallel.xlsx")
+df <- readxl::read_excel("data/Winkel_fuer_Hangparallel.xlsx")
 
 # ----- 3) Histogramm der beobachteten Winkelabweichung -----
 # -> Kleine Winkelwerte bedeuten, dass ein Wildwechsel nahezu hangparallel verläuft.
@@ -55,8 +55,8 @@ p_hist
 # -> Das DGM dient zur Ableitung von Hangneigung und Exposition.
 # -> Das Untersuchungsgebiet wird verwendet, um die Rasterdaten auf die Kernzone 
 # zuzuschneiden.
-dem <- rast("C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/DGM.tif")          
-ug  <- st_read("C:/Users/Ricar/OneDrive/Desktop/Uni/Bachelorarbeit/Untersuchungsgebiet.gpkg")   
+dem <- rast("dta/DGM.tif")          
+ug  <- st_read("data/Untersuchungsgebiet.gpkg")   
 ug_v <- vect(ug)     
 
 # ----- 5) DGM auf Untersuchungsgebiet zuschneiden -----
