@@ -1,92 +1,92 @@
-# Wildlife Trails and Camera Trap Placement in Ungulates
-### Bachelor Thesis - UNESCO Biosphere Reserve Thuringian Forest
+# Wildwechsel und Kameraplatzierung bei Paarhufern
+### Bachelorarbeit - UNESCO-Biosphärenreservat Thüringer Wald
 
-R scripts and spatial analyses used for a bachelor thesis on wildlife trail ecology, camera trap placement and ungulate movement behaviour.
-
----
-
-## Project Overview
-This repository contains the R scripts used for the statistical analyses, GIS-based evaluations and figure creation for my bachelor thesis. The study investigaed spatial movement structures ("Wildlife trails") of ungulates and the influence of camera trap placement on detection rates and recorded behavioural patterns within the core zone *Vessertal-Nahetal-Stelzenwiesengrund* in the UNESCO Biosphere Reserve Thuringian Forest (Germany).
-
-The bachelor thesis itself was written in German.
+R-Skripte und räumliche Analysen zur Untersuchung von Wildwechseln, Kameraplatzierungen und Bewegungsverhalten von Paarhufern.
 
 ---
 
-## Contents
-- [Study Species](#study-species)
-- [Research Focus](#research-focus)
-- [Repository Structure](#repository-structure)
-- [Workflow](#Workflow)
-- [Main Methods](#main-methods)
-- [Software and Packages](#software-and-packaged)
-- [Data Notes](#data-notes)
-- [Reproducibility](#reproducibility)
-- [Author](#author)
+## Projektübersicht
+Diese Repository enthält die R-Skripte, die für die statistischen Analysen, GIS-basierten Auswertungen und die Erstellung der Abbildungen meiner Bachelorarbeit verwendet wurden. Die Studie untersuchte räumliche Bewegungsstrukturen ("Wildwechsel") von Paarhufern sowie den Einfluss der Kameraplatzierung auf Erfassungsraten und aufgezeichnete Verhaltensmuster innerhalb der Kernzone *Vessertal-Nahetal-Stelzenwiesengrund* im UNESCO-Biosphärenreservat Thüringer Wald (Deutschland).
 
 ---
 
-## Study species
-| Common name | Scientific name |
+## Inhalt
+- [Untersuchungsarten](#untersuchungsarten)
+- [Forschungsschwerpunkte](#forschungsschwerpunkte)
+- [Repository-Struktur](#repository-struktur)
+- [Arbeitsablauf](#arbeitsablauf)
+- [Methoden](#methoden)
+- [Verwendete Software und Pakete](#verwendete-software-und-pakete)
+- [Hinweise zu den Daten](#hinweise-zu-den-daten)
+- [Reproduzierbarkeit](#reproduzierbarkeit)
+- [Autorin(#autorin)
+
+---
+
+## Untersuchungsarten
+| Deutscher Name | Wissenschaftlicher Name |
 |---|---|
-| Red deer | *Cervus elaphus* |
-| Roe deer | *Capreolus capreolus* |
-| Wild boar | *Sus scrofa* |
+| Rothirsch | *Cervus elaphus* |
+| Reh| *Capreolus capreolus* |
+| Wildschwein | *Sus scrofa* |
 
 ---
 
-## Research Focus
-The analyses focused on:
-- spatial occurrence of wildlife trails
-- orientation of wildlife trails relative to terrain structure
-- comparison of random vs. targeted camera trap placement
-- detection rated and behavioural patterns
-- GIS-based environmental covariates
-- movement-related behaviour of ungulates
-
+## Forschungsschwerpunkte
+Die Analysen konzentrierten sich auf:
+- das räumliche Auftreten von Wildwechseln
+- die Orientierung von Wildwechseln relativ zur Geländeform
+- den Vergleich zufälliger und gezielter Kameraplatzierung
+- Erfassungsraten und Verhaltensmuster
+- GIS-basierte Umwelt- und Standortparameter
+- bewegungsbezogenes Verhalten von Paarhufern
 ---
 
-## Repository Structure
+## Repository-Struktur
 ```text
-├── 01_detection_ratess.R
-├── 02_behaviour_analysis.R
-├── 03_trail_orientation_analysis.R
-├── 04_camera_site_covariates.R
-├── 05_spatial_visualization.R
+├── 1 Analyse_der_Kovariaten.R
+├── 2 Kameralaufzeit_Berechnung.R
+├── 3 Prozent_Fehlauslösungen.R
+├── 4 Räumliche Darstellung der Kamerastandorte und Artzusammensetzung.R
+├── 5 Hypothese1_Erfassungsrate_nach_Kameraplatzierung.R
+├── 6 Hypothese2_Hangparallel.R
+├── 7 Hypothese3_Verhalten.R
 └── README.md
 ```
 
-## Workflow
+## Arbeitsablauf
 ```text
-Camera Trap Data
+Kamerafallen-Daten
       ↓
-Data Cleaning and Standardisation
+Datenbereinigung und Standardisierung
       ↓
-Event Classification
+Klassifikation unabhängiger Ereignisse
       ↓
-Statistical Analyses
+Statistische Analyse
       ↓
-GIS-based Spatial Analyses
+GIS-basierte räumliche Analyses
       ↓
-Visualization and Figure Creation
+Visualisierung und Abbildungserstellung
 ```
 
 ---
 
-## Main Methods
+## Methoden
 
-### Statistical analyses
-- Monte Carlo permutation tests
-- Spearman correlations
-- Non-parametric statistics
-- Descriptive analyses
+### Statistische Analyses
+- Wilcoxon-Rangsummen-Tests
+- Chi-Quadrat-Tests
+- Monte-Carlo-Permutationstests
+- Effektstärkenschätzung
+- Deskriptive Statistik
 
-### Spatial analyses
-- GIS-based covariate extraction
-- DEM-derived terrain analyses
-- Wildlife trail orientation analyses
-- OpenStreetMap-based distance calculations
+### Räumliche Analysen
+- GIS-basierte Kovariatenextraktion
+- Geländeanalysesn auf Basis digitaler Geländemodelle (DGM)
+- Analyses der Wildwechselorientierung
+- Distanzberechnungen auf Basis von OpenStreetMap-Daten
 
-### Visualization
+### Visualisierung
 - ggplot2
 - scatterpie
 - sf
@@ -94,12 +94,12 @@ Visualization and Figure Creation
 
 ---
 
-## Software and Packages
+## Verwendete Software und Pakete
 
 <details>
-<summary>Show packages used in R</summary>
+<summary>Verwendete R-Pakete anzeigen</summary>
 
-### Core packages
+### Kernpakete
 ```r
 library(dplyr)
 library(ggplot2)
@@ -108,7 +108,7 @@ library(terra)
 library(tidyr)
 ```
 
-### Spatial analyses
+### Räumliche Analysen
 ```r
 library(osmdata)
 library(ggspatial)
@@ -116,7 +116,7 @@ library(scatterpie)
 library(ggforce)
 ```
 
-### Camera trap analyses
+### Kamerafallenanalysen
 ```r
 library(camtrapDensity)
 ```
@@ -125,18 +125,18 @@ library(camtrapDensity)
 
 ---
 
-## Data Notes
-This repository contains analyes scripts only. Raw field data, camera trap records and GIS base data are not publicly included. Some analyses require local raster and vector datasets that are not part of the repository.
+## Hinweise zu den Daten
+Dieses Repository enthält ausschließlich Analyseskripte. Rohdaten der Feldarbeit, Kamerafallenaufnahmen und GIS-Basisdaten sind nicht öffentlich enthalten. Einige Analysen erfordern lokale Raster- und Vektordatensätze, die nicht Bestandteil des Repositorys sind.
 
 ---
 
-## Reproducibility
-The scripts were developed specifically for the analyses conducted in the bachelor thesis. Before execution, file paths and local GIS data sourced may need adjustment.
+## Reproduzierbarkeit
+Die Skripte wurden speziell für die im Rahmen der Bachelorarbeit durchgeführten Analysen entwickelt. Vor der Ausführung müssen lokale Datepfade gegebenenfalls angepasst werden.
 
 ---
 
-## Author
+## Autorin
 Rica Rauschenberg
-Bachelor thesis conducted at University of Potsdam
-Year: 2026
+Universität Potsdam
+2026
 
