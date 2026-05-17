@@ -19,6 +19,7 @@ library(dplyr)
 library(ggplot2)
 library(effsize)
 library(ggtext)
+library(stringr)
 
 # ----- 2) Dateipfade definieren -----
 # Ereignistabelle:

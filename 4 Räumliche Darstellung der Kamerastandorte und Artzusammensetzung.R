@@ -22,7 +22,7 @@ library(ggforce)
 
 # ----- 2) Pfade definieren und Daten einlesen -----
 # CamtrapDP-Datensatz
-dp_path <- "data/biosphere-reserve-thuringian-forest-20260128120013/datapackage.json"
+dp_path <- "data/datapackage.json"
 
 # Polygon der Kernzone 
 kernzone_path <- "data/UmrandungNeu.gpkg"
