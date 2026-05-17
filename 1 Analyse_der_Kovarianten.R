@@ -30,6 +30,12 @@ library(terra)
 # ----- 2) Daten einlesen -----
 cov <- read_excel("data/Kamera_Laufzeit.xlsx")
 
+cov <- cov %>%
+  rename(
+    canopy_cover = `Mittelwert...14`,
+    veg_density  = `Mittelwert...19`
+  )
+
 # ----- 3) Kamera-IDs bereinigen -----
 # -> Leerzeichen in den Kamera-IDs werden vereinheitlicht
 # -> VTK 090 wird ausgeschlossen, da diese Kamera nicht in die finale Auswertung eingeht
@@ -126,7 +132,7 @@ cov$dist_stream_m <- as.numeric(st_distance(
 
 # ----- 13) Digitales Geländemodell einlesen -----
 # -> Das DGM dient zur Ableitung von Höhenlage, Hangneigung und Exposition.
-dem <- rast(data/VerschmolzenDGM1.tif")
+dem <- rast("data/VerschmolzenDGM1.tif")
 
 # ----- 14) Kamerapunkte an Koordinatensystem des DGM anpassen -----
 # -> Nur bei gleichem Koordinatensystem können Rasterwerte korrekt an den Kamera-
