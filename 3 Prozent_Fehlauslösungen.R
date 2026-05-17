@@ -13,6 +13,7 @@
 # ----- 1) Pakete laden -----
 library(readxl)
 library(dplyr)
+library(stringr)
 
 # ----- 2) Dateipfade definieren -----
 file_animals  <- "data/Arten_pro_Kamera_lang.xlsx"
