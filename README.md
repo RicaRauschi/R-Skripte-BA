@@ -142,12 +142,14 @@ library(camtrapDensity)
 ---
 
 ## Hinweise zu den Daten
-Dieses Repository enthält ausschließlich Analyseskripte. Rohdaten der Feldarbeit, Kamerafallenaufnahmen und GIS-Basisdaten sind nicht öffentlich enthalten. Einige Analysen erfordern lokale Raster- und Vektordatensätze, die nicht Bestandteil des Repositorys sind.
+Das Repository enthält Analyseskripte sowie ausgewählte Datensätze, die für die Reproduzierbarkeit der Analysen erforderlich sind. Dazu gehören unter anderem Tabellen im `.xlsx`-Format, CamtrapDP-Dateien sowie GIS-basierte Raster- und Vektordaten.
+
+Originale Kamerafallenaufnahmen, vollständige Rohdaten der Feldarbeit und sensible Standortinformationen sind nicht öffentlich enthalten.
 
 ---
 
 ## Reproduzierbarkeit
-Die Skripte wurden speziell für die im Rahmen der Bachelorarbeit durchgeführten Analysen entwickelt. Vor der Ausführung müssen lokale Datepfade gegebenenfalls angepasst werden.
+Die Skripte wurden für die im Rahmen der Bachelorarbeit durchgeführten Analysen entwickelt. Vor der Ausführung müssen lokale Dateipfade gegebenenfalls angepasst werden.
 
 ---
 
