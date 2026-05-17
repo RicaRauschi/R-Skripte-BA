@@ -1,0 +1,253 @@
+{
+  "profile": "https://raw.githubusercontent.com/tdwg/camtrap-dp/1.0/camtrap-dp-profile.json",
+  "name": "biosphere-reserve-thuringian-forest-20260128120013",
+  "id": "17109016-03ac-4a6f-9aff-f075bd7437de",
+  "created": "2026-01-28T12:00:13Z",
+  "contributors": [
+    {
+      "title": "Agouti Admins",
+      "email": "agouti@wur.nl",
+      "role": "contributor",
+      "organization": "Wageningen University"
+    },
+    {
+      "title": "Rica Rauschenberg",
+      "email": "rica.rauschenberg@gmail.com",
+      "role": "principalInvestigator"
+    },
+    {
+      "title": "Tiemo Kahl",
+      "email": "Tiemo.Kahl@nnl.thueringen.de",
+      "role": "principalInvestigator"
+    },
+    {
+      "title": "Biosphere Reserve Thuringian Forest",
+      "role": "rightsHolder"
+    },
+    {
+      "title": "Tiemo Kahl",
+      "role": "contact"
+    },
+    {
+      "title": "Agouti Admins",
+      "role": "principalInvestigator"
+    }
+  ],
+  "image": "https://www.agouti.eu/uploads/project-images/32829721-bcff-4a67-9a24-5f9d686f3575.png",
+  "sources": [
+    {
+      "title": "Agouti",
+      "path": "https://www.agouti.eu",
+      "email": "agouti@wur.nl",
+      "version": "v4"
+    }
+  ],
+  "project": {
+    "id": "32829721-bcff-4a67-9a24-5f9d686f3575",
+    "title": "Biosphere Reserve Thuringian Forest",
+    "description": "Data from camera traps within the UNESCO Biosphere Reserve Thuringian Forest",
+    "samplingDesign": "opportunistic",
+    "captureMethod": [
+      "activityDetection"
+    ],
+    "individualAnimals": true,
+    "observationLevel": [
+      "event",
+      "media"
+    ]
+  },
+  "spatial": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          10.80953,
+          50.58723
+        ],
+        [
+          10.80953,
+          50.58723
+        ],
+        [
+          10.80953,
+          50.58723
+        ],
+        [
+          10.80953,
+          50.58723
+        ],
+        [
+          10.80953,
+          50.58723
+        ]
+      ]
+    ]
+  },
+  "temporal": {
+    "start": "2025-08-14",
+    "end": "2025-11-27"
+  },
+  "taxonomic": [
+    {
+      "scientificName": "Capreolus capreolus",
+      "taxonID": "https://www.checklistbank.org/dataset/COL2023/taxon/QSF3",
+      "taxonRank": "species",
+      "order": "Artiodactyla",
+      "family": "Cervidae",
+      "vernacularNames": {
+        "eng": "roe deer",
+        "nld": "ree"
+      }
+    },
+    {
+      "scientificName": "Cervus elaphus",
+      "taxonID": "https://www.checklistbank.org/dataset/COL2023/taxon/T56G",
+      "taxonRank": "species",
+      "order": "Artiodactyla",
+      "family": "Cervidae",
+      "vernacularNames": {
+        "eng": "red deer",
+        "nld": "edelhert"
+      }
+    },
+    {
+      "scientificName": "Erithacus rubecula",
+      "taxonID": "https://www.checklistbank.org/dataset/COL2023/taxon/6H2XM",
+      "taxonRank": "species",
+      "order": "Passeriformes",
+      "family": "Muscicapidae",
+      "vernacularNames": {
+        "eng": "European robin",
+        "nld": "roodborst"
+      }
+    },
+    {
+      "scientificName": "Garrulus glandarius",
+      "taxonID": "https://www.checklistbank.org/dataset/COL2023/taxon/6JYHZ",
+      "taxonRank": "species",
+      "order": "Passeriformes",
+      "family": "Corvidae",
+      "vernacularNames": {
+        "eng": "Eurasian jay",
+        "nld": "gaai"
+      }
+    },
+    {
+      "scientificName": "Homo sapiens",
+      "taxonID": "https://www.checklistbank.org/dataset/COL2023/taxon/6MB3T",
+      "taxonRank": "species",
+      "order": "Primates",
+      "family": "Hominidae",
+      "vernacularNames": {
+        "eng": "human",
+        "nld": "mens"
+      }
+    },
+    {
+      "scientificName": "Meles meles",
+      "taxonID": "https://www.checklistbank.org/dataset/COL2023/taxon/3ZDRX",
+      "taxonRank": "species",
+      "order": "Carnivora",
+      "family": "Mustelidae",
+      "vernacularNames": {
+        "eng": "European badger",
+        "nld": "das"
+      }
+    },
+    {
+      "scientificName": "Sciurus vulgaris",
+      "taxonID": "https://www.checklistbank.org/dataset/COL2023/taxon/79Y2K",
+      "taxonRank": "species",
+      "order": "Rodentia",
+      "family": "Sciuridae",
+      "vernacularNames": {
+        "eng": "red squirrel",
+        "nld": "rode eekhoorn"
+      }
+    },
+    {
+      "scientificName": "Sus scrofa",
+      "taxonID": "https://www.checklistbank.org/dataset/COL2023/taxon/53HGR",
+      "taxonRank": "species",
+      "order": "Artiodactyla",
+      "family": "Suidae",
+      "vernacularNames": {
+        "eng": "wild boar",
+        "nld": "everzwijn"
+      }
+    },
+    {
+      "scientificName": "Turdus iliacus",
+      "taxonID": "https://www.checklistbank.org/dataset/COL2023/taxon/59PLT",
+      "taxonRank": "species",
+      "order": "Passeriformes",
+      "family": "Turdidae",
+      "vernacularNames": {
+        "eng": "redwing",
+        "nld": "koperwiek"
+      }
+    },
+    {
+      "scientificName": "Turdus merula",
+      "taxonID": "https://www.checklistbank.org/dataset/COL2023/taxon/7CYVX",
+      "taxonRank": "species",
+      "order": "Passeriformes",
+      "family": "Turdidae",
+      "vernacularNames": {
+        "eng": "common blackbird",
+        "nld": "merel"
+      }
+    },
+    {
+      "scientificName": "Turdus viscivorus",
+      "taxonID": "https://www.checklistbank.org/dataset/COL2023/taxon/59PNF",
+      "taxonRank": "species",
+      "order": "Passeriformes",
+      "family": "Turdidae",
+      "vernacularNames": {
+        "eng": "mistle thrush",
+        "nld": "grote lijster"
+      }
+    },
+    {
+      "scientificName": "Vulpes vulpes",
+      "taxonID": "https://www.checklistbank.org/dataset/COL2023/taxon/5BSG3",
+      "taxonRank": "species",
+      "order": "Carnivora",
+      "family": "Canidae",
+      "vernacularNames": {
+        "eng": "red fox",
+        "nld": "vos"
+      }
+    }
+  ],
+  "resources": [
+    {
+      "name": "deployments",
+      "path": "deployments.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "https://raw.githubusercontent.com/tdwg/camtrap-dp/1.0/deployments-table-schema.json"
+    },
+    {
+      "name": "media",
+      "path": "media.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "https://raw.githubusercontent.com/tdwg/camtrap-dp/1.0/media-table-schema.json"
+    },
+    {
+      "name": "observations",
+      "path": "observations.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "https://raw.githubusercontent.com/tdwg/camtrap-dp/1.0/observations-table-schema.json"
+    }
+  ]
+}
