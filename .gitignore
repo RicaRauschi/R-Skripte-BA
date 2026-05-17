@@ -1,2 +1,7 @@
 .Rhistory
 .RData
+.RData
+.Rhistory
+.Rproj.user
+.RDataTmp*
+rosm.cache/
