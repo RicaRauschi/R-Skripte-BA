@@ -73,11 +73,12 @@ Visualisierung und Abbildungserstellung
 
 ## Methoden
 
-### Statistische Analyses
-- Wilcoxon-Rangsummen-Tests
+### Statistische Analysen
+- Wilcoxon-Rangsummentests
 - Chi-Quadrat-Tests
 - Monte-Carlo-Permutationstests
-- Effektstärkenschätzung
+- Effektstärkenschätzung mit Cliff’s Delta
+- Spearman-Rangkorrelationen
 - Deskriptive Statistik
 
 ### Räumliche Analysen
