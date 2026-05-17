@@ -87,10 +87,10 @@ Visualisierung und Abbildungserstellung
 - Distanzberechnungen auf Basis von OpenStreetMap-Daten
 
 ### Visualisierung
-- ggplot2
-- scatterpie
-- sf
-- ggspatial
+- Erstellung statistischer Diagramme
+- GIS-basierte Kartendarstellung
+- Räumliche Visualisierung von Kamerastandorten
+- Darstellung artspezifischer Nachweishäufigkeiten mittels Pie-Charts
 
 ---
 
@@ -99,21 +99,36 @@ Visualisierung und Abbildungserstellung
 <details>
 <summary>Verwendete R-Pakete anzeigen</summary>
 
-### Kernpakete
+### Datenverarbeitung
 ```r
+library(readxl)
+library(readr)
 library(dplyr)
-library(ggplot2)
-library(sf)
-library(terra)
 library(tidyr)
+library(stringr)
 ```
 
-### Räumliche Analysen
+### Statistische Analysen
 ```r
+library(effsize)
+library(scales)
+```
+
+### Räumliche Analysen und GIS
+```r
+library(sf)
+library(terra)
 library(osmdata)
+```
+
+### Visualisierung
+```r
+library(ggplot2)
 library(ggspatial)
 library(scatterpie)
 library(ggforce)
+library(ggtext)
+library(cowplot)
 ```
 
 ### Kamerafallenanalysen
