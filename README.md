@@ -18,6 +18,7 @@ Diese Repository enthält die R-Skripte, die für die statistischen Analysen, GI
 - [Methoden](#methoden)
 - [Verwendete Software und Pakete](#verwendete-software-und-pakete)
 - [Hinweise zu den Daten](#hinweise-zu-den-daten)
+- [Systemvoraussetzungen](#systemvoraussetzungen)
 - [Reproduzierbarkeit](#reproduzierbarkeit)
 - [Autorin](#autorin)
 
@@ -51,6 +52,10 @@ Die Analysen konzentrierten sich auf:
 ├── 5 Hypothese1_Erfassungsrate_nach_Kameraplatzierung.R
 ├── 6 Hypothese2_Hangparallel.R
 ├── 7 Hypothese3_Verhalten.R
+├── data/                  # Eingabedaten (Tabellen, CamtrapDP, GIS-Layer)
+├── renv.lock              # Gepinnte R-Paketversionen
+├── renv/                  # renv-Projektbibliothek (von renv verwaltet)
+├── .Rprofile              # aktiviert renv beim R-Start
 └── README.md
 ```
 
@@ -64,7 +69,7 @@ Klassifikation unabhängiger Ereignisse
       ↓
 Statistische Analyse
       ↓
-GIS-basierte räumliche Analyses
+GIS-basierte räumliche Analysen
       ↓
 Visualisierung und Abbildungserstellung
 ```
@@ -83,8 +88,8 @@ Visualisierung und Abbildungserstellung
 
 ### Räumliche Analysen
 - GIS-basierte Kovariatenextraktion
-- Geländeanalysesn auf Basis digitaler Geländemodelle (DGM)
-- Analyses der Wildwechselorientierung
+- Geländeanalysen auf Basis digitaler Geländemodelle (DGM)
+- Analyse der Wildwechselorientierung
 - Distanzberechnungen auf Basis von OpenStreetMap-Daten
 
 ### Visualisierung
@@ -96,48 +101,15 @@ Visualisierung und Abbildungserstellung
 ---
 
 ## Verwendete Software und Pakete
+Die Analysen wurden in **R** durchgeführt. Eingesetzt wurden:
 
-<details>
-<summary>Verwendete R-Pakete anzeigen</summary>
+- **Datenverarbeitung:** tidyverse-Pakete (`readxl`, `readr`, `dplyr`, `tidyr`, `stringr`)
+- **Statistik:** `effsize`, `scales`
+- **Räumliche Analysen und GIS:** `sf`, `terra`, `osmdata`
+- **Visualisierung:** `ggplot2`, `ggspatial`, `scatterpie`, `ggforce`, `ggtext`, `cowplot`
+- **Kamerafallenanalysen:** `camtrapDensity` (mit `camtraptor`)
 
-### Datenverarbeitung
-```r
-library(readxl)
-library(readr)
-library(dplyr)
-library(tidyr)
-library(stringr)
-```
-
-### Statistische Analysen
-```r
-library(effsize)
-library(scales)
-```
-
-### Räumliche Analysen und GIS
-```r
-library(sf)
-library(terra)
-library(osmdata)
-```
-
-### Visualisierung
-```r
-library(ggplot2)
-library(ggspatial)
-library(scatterpie)
-library(ggforce)
-library(ggtext)
-library(cowplot)
-```
-
-### Kamerafallenanalysen
-```r
-library(camtrapDensity)
-```
-
-</details>
+Die exakten Paketversionen sind in [`renv.lock`](renv.lock) festgehalten und können mit `renv::restore()` reproduziert werden (siehe [Reproduzierbarkeit](#reproduzierbarkeit)).
 
 ---
 
@@ -148,8 +120,43 @@ Originale Kamerafallenaufnahmen, vollständige Rohdaten der Feldarbeit und sensi
 
 ---
 
+## Systemvoraussetzungen
+Die räumlichen R-Pakete (`sf`, `terra`, `osmdata`) binden native Bibliotheken ein, die vor der Paketinstallation auf System­ebene vorhanden sein müssen.
+
+**macOS** (mit [Homebrew](https://brew.sh)):
+```bash
+xcode-select --install
+brew install pkg-config gdal geos proj udunits sqlite tbb
+```
+
+**Debian / Ubuntu:**
+```bash
+sudo apt install build-essential pkg-config \
+  libgdal-dev libgeos-dev libproj-dev libudunits2-dev libsqlite3-dev libtbb-dev
+```
+
+**Windows:** keine zusätzlichen Systempakete erforderlich – CRAN liefert vorkompilierte Binärpakete für `sf`, `terra` etc., die `renv::restore()` automatisch verwendet.
+
+---
+
 ## Reproduzierbarkeit
-Die Skripte wurden für die im Rahmen der Bachelorarbeit durchgeführten Analysen entwickelt. Vor der Ausführung müssen lokale Dateipfade gegebenenfalls angepasst werden.
+Die R-Paketumgebung wird mit [renv](https://rstudio.github.io/renv/) verwaltet; alle Versionen sind in `renv.lock` gepinnt.
+
+Empfohlener Ablauf für eine frische Installation:
+
+1. **Systemabhängigkeiten installieren** (siehe [Systemvoraussetzungen](#systemvoraussetzungen)).
+2. **R installieren** (Version ≥ 4.6 empfohlen, vergleiche `renv.lock`).
+3. **renv installieren**, falls noch nicht vorhanden:
+   ```r
+   install.packages("renv")
+   ```
+4. **Projektbibliothek wiederherstellen** – im Projektverzeichnis R starten und ausführen:
+   ```r
+   renv::restore()
+   ```
+5. **Skripte ausführen.**
+
+Lokale Dateipfade innerhalb der Skripte müssen gegebenenfalls an die eigene Umgebung angepasst werden.
 
 ---
 

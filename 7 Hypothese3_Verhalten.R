@@ -7,7 +7,6 @@
 # ============================================
 
 # ----- 1) Pakete laden -----
-install.packages("cowplot")
 library(cowplot)
 library(readxl)
 library(dplyr)
