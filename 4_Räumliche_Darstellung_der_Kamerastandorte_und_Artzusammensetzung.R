@@ -17,6 +17,7 @@ library(stringr)
 library(sf)
 library(ggplot2)
 library(ggspatial)
+library(prettymapr)   # von ggspatial::annotation_map_tile() implizit geladen
 library(scatterpie)
 library(ggforce)
 
