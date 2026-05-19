@@ -5,4 +5,4 @@
 .Rproj.user
 .RDataTmp*
 rosm.cache/
-Rplots.pdf
+*.pdf
